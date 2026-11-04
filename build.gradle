@@ -6,10 +6,6 @@ plugins {
 version = "${project.mod_version}+${project.minecraft_version}"
 group = project.maven_group
 
-base {
-    archivesName = project.archives_base_name
-}
-
 repositories {
     // Polymer, SGUI and Server Translations API are published here.
     maven { url = 'https://maven.nucleoid.xyz/' }
