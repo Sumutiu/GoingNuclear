@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/condenser_side",
+    "north": "goingnuclear:block/condenser_front",
+    "south": "goingnuclear:block/condenser_back",
+    "east": "goingnuclear:block/condenser_side",
+    "west": "goingnuclear:block/condenser_side",
+    "up": "goingnuclear:block/condenser_top",
+    "down": "goingnuclear:block/condenser_bottom"
+  }
+}

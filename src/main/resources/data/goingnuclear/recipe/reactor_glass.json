@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "goingnuclear:reactor_casing",
+    "minecraft:glass"
+  ],
+  "result": {
+    "id": "goingnuclear:reactor_glass",
+    "count": 2
+  }
+}

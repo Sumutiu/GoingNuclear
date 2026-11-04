@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IWI",
+    "RCR",
+    "IWI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "W": "goingnuclear:copper_wire",
+    "R": "minecraft:redstone_block",
+    "C": "minecraft:copper_block"
+  },
+  "result": {
+    "id": "goingnuclear:battery_bank",
+    "count": 1
+  }
+}

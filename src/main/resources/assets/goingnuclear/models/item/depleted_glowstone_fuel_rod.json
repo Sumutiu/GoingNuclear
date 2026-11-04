@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "goingnuclear:item/depleted_glowstone_fuel_rod"
+  }
+}

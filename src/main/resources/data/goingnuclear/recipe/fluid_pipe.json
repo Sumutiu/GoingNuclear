@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CGC"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "G": "minecraft:glass"
+  },
+  "result": {
+    "id": "goingnuclear:fluid_pipe",
+    "count": 8
+  }
+}

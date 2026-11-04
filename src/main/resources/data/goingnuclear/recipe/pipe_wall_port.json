@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    "SPS",
+    " S "
+  ],
+  "key": {
+    "S": "minecraft:smooth_stone",
+    "P": "goingnuclear:fluid_pipe"
+  },
+  "result": {
+    "id": "goingnuclear:pipe_wall_port",
+    "count": 1
+  }
+}

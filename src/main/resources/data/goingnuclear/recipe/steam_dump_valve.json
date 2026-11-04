@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ILI",
+    "ICI",
+    "IPI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "L": "minecraft:lever",
+    "C": "goingnuclear:check_valve",
+    "P": "goingnuclear:fluid_pipe"
+  },
+  "result": {
+    "id": "goingnuclear:steam_dump_valve",
+    "count": 1
+  }
+}

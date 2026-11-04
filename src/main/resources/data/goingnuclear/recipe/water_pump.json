@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IPI",
+    "XBX",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "goingnuclear:fluid_pipe",
+    "X": "minecraft:piston",
+    "B": "minecraft:bucket",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "goingnuclear:water_pump",
+    "count": 1
+  }
+}

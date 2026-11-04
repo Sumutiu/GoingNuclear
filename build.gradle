@@ -1,0 +1,60 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+    id 'maven-publish'
+}
+
+version = "${project.mod_version}+${project.minecraft_version}"
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    // Polymer, SGUI and Server Translations API are published here.
+    maven { url = 'https://maven.nucleoid.xyz/' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    // Server-side content libraries. They are bundled (Jar-in-Jar) into the mod jar,
+    // so a server only needs Fabric API + this mod.
+    implementation include("eu.pb4:polymer-core:${project.polymer_version}")
+    implementation include("eu.pb4:polymer-blocks:${project.polymer_version}")
+    implementation include("eu.pb4:polymer-resource-pack:${project.polymer_version}")
+    implementation include("eu.pb4:polymer-virtual-entity:${project.polymer_version}")
+    implementation include("eu.pb4:polymer-autohost:${project.polymer_version}")
+    implementation include("eu.pb4:sgui:${project.sgui_version}")
+    implementation include("xyz.nucleoid:server-translations-api:${project.server_translations_version}")
+}
+
+processResources {
+    def version = project.version
+    inputs.property "version", version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+}
+
+java {
+    // Compile with Java 25 whatever JVM Gradle itself runs on (downloaded by foojay if missing)
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    withSourcesJar()
+}
+
+jar {
+    def projectName = project.name
+    inputs.property "projectName", projectName
+
+    from("LICENSE") {
+        rename { "${it}_$projectName" }
+    }
+}

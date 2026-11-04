@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IPI",
+    " B "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "goingnuclear:fluid_pipe",
+    "B": "minecraft:iron_bars"
+  },
+  "result": {
+    "id": "goingnuclear:water_outlet",
+    "count": 1
+  }
+}

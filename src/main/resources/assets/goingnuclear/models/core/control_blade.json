@@ -1,0 +1,72 @@
+{
+  "textures": {
+    "particle": "minecraft:block/coal_block",
+    "blade": "minecraft:block/coal_block"
+  },
+  "elements": [
+    {
+      "from": [
+        3.2,
+        0,
+        7.44
+      ],
+      "to": [
+        12.8,
+        16,
+        8.56
+      ],
+      "faces": {
+        "north": {
+          "texture": "#blade"
+        },
+        "south": {
+          "texture": "#blade"
+        },
+        "east": {
+          "texture": "#blade"
+        },
+        "west": {
+          "texture": "#blade"
+        },
+        "up": {
+          "texture": "#blade"
+        },
+        "down": {
+          "texture": "#blade"
+        }
+      }
+    },
+    {
+      "from": [
+        7.44,
+        0,
+        3.2
+      ],
+      "to": [
+        8.56,
+        16,
+        12.8
+      ],
+      "faces": {
+        "north": {
+          "texture": "#blade"
+        },
+        "south": {
+          "texture": "#blade"
+        },
+        "east": {
+          "texture": "#blade"
+        },
+        "west": {
+          "texture": "#blade"
+        },
+        "up": {
+          "texture": "#blade"
+        },
+        "down": {
+          "texture": "#blade"
+        }
+      }
+    }
+  ]
+}

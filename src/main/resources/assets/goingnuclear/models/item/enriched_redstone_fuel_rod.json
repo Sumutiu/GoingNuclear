@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "goingnuclear:item/enriched_redstone_fuel_rod"
+  }
+}

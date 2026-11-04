@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "goingnuclear",
+    "version": "${version}",
+    "name": "Going Nuclear",
+    "description": "Server-side nuclear power: size-variable fission reactors with heat, coolant and steam simulation, pumps, pipes, heat exchangers, turbines, power poles and an electric grid that can run vanilla furnaces. Vanilla clients can join without installing anything.",
+    "authors": [
+        "Sumutiu"
+    ],
+    "contact": {},
+    "license": "AGPL-3.0-only",
+    "icon": "assets/goingnuclear/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.sumutiu.goingnuclear.GoingNuclear"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.20.1",
+        "minecraft": "~26.3",
+        "java": ">=25",
+        "fabric-api": "*",
+        "polymer-core": ">=0.18.0",
+        "polymer-blocks": ">=0.18.0",
+        "polymer-resource-pack": ">=0.18.0",
+        "polymer-virtual-entity": ">=0.18.0",
+        "sgui": ">=2.2.0"
+    }
+}

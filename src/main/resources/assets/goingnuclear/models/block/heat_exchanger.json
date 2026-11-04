@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/heat_exchanger_side_out",
+    "north": "goingnuclear:block/heat_exchanger_front",
+    "south": "goingnuclear:block/heat_exchanger_side_out",
+    "east": "goingnuclear:block/heat_exchanger_side_out",
+    "west": "goingnuclear:block/heat_exchanger_side_out",
+    "up": "goingnuclear:block/heat_exchanger_top",
+    "down": "goingnuclear:block/heat_exchanger_bottom"
+  }
+}

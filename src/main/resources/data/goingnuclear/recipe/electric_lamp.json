@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "GWG",
+    " I "
+  ],
+  "key": {
+    "G": "minecraft:glass",
+    "W": "goingnuclear:copper_wire",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "goingnuclear:electric_lamp",
+    "count": 2
+  }
+}

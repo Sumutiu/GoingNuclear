@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NWN",
+    " L ",
+    " L "
+  ],
+  "key": {
+    "N": "minecraft:iron_nugget",
+    "W": "goingnuclear:copper_wire",
+    "L": "#minecraft:logs"
+  },
+  "result": {
+    "id": "goingnuclear:power_pole",
+    "count": 3
+  }
+}

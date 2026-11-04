@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/expansion_tank_side_4",
+    "north": "goingnuclear:block/expansion_tank_front",
+    "south": "goingnuclear:block/expansion_tank_back",
+    "east": "goingnuclear:block/expansion_tank_side_4",
+    "west": "goingnuclear:block/expansion_tank_side_4",
+    "up": "goingnuclear:block/expansion_tank_top",
+    "down": "goingnuclear:block/expansion_tank_top"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "KWK"
+  ],
+  "key": {
+    "K": "minecraft:dried_kelp",
+    "W": "goingnuclear:copper_wire"
+  },
+  "result": {
+    "id": "goingnuclear:power_cable",
+    "count": 4
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "goingnuclear:reactor_casing",
+    "goingnuclear:reactor_glass",
+    "goingnuclear:reactor_controller",
+    "goingnuclear:reactor_port",
+    "goingnuclear:fuel_channel",
+    "goingnuclear:control_rod_channel",
+    "goingnuclear:fluid_pipe",
+    "goingnuclear:water_pump",
+    "goingnuclear:circulation_pump",
+    "goingnuclear:heat_exchanger",
+    "goingnuclear:steam_turbine",
+    "goingnuclear:battery_bank",
+    "goingnuclear:backup_generator",
+    "goingnuclear:electric_lamp",
+    "goingnuclear:temperature_sensor",
+    "goingnuclear:pipe_wall_port",
+    "goingnuclear:cable_wall_port",
+    "goingnuclear:check_valve",
+    "goingnuclear:water_outlet",
+    "goingnuclear:condenser",
+    "goingnuclear:enrichment_centrifuge",
+    "goingnuclear:steam_dump_valve",
+    "goingnuclear:expansion_tank",
+    "goingnuclear:corium"
+  ]
+}

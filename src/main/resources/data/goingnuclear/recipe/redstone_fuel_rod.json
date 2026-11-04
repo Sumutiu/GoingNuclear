@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IRI",
+    "IBI",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone",
+    "B": "minecraft:redstone_block"
+  },
+  "result": {
+    "id": "goingnuclear:redstone_fuel_rod",
+    "count": 1
+  }
+}

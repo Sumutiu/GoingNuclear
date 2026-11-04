@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IPI",
+    "XGX",
+    "IWI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "goingnuclear:fluid_pipe",
+    "X": "minecraft:iron_block",
+    "G": "minecraft:redstone_block",
+    "W": "goingnuclear:copper_wire"
+  },
+  "result": {
+    "id": "goingnuclear:steam_turbine",
+    "count": 1
+  }
+}

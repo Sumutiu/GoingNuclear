@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/steam_turbine_power_out",
+    "north": "goingnuclear:block/steam_turbine_front",
+    "south": "goingnuclear:block/steam_turbine_power_out",
+    "east": "goingnuclear:block/steam_turbine_power_out",
+    "west": "goingnuclear:block/steam_turbine_power_out",
+    "up": "goingnuclear:block/steam_turbine_top",
+    "down": "goingnuclear:block/steam_turbine_bottom"
+  }
+}

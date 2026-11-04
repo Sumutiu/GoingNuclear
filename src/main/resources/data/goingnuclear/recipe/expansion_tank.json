@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IGI",
+    "PBP",
+    "IGI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "G": "minecraft:glass",
+    "P": "goingnuclear:fluid_pipe",
+    "B": "minecraft:bucket"
+  },
+  "result": {
+    "id": "goingnuclear:expansion_tank",
+    "count": 1
+  }
+}

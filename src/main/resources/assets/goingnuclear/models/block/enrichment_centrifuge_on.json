@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/enrichment_centrifuge_side",
+    "north": "goingnuclear:block/enrichment_centrifuge_front_on",
+    "south": "goingnuclear:block/machine_power_in",
+    "east": "goingnuclear:block/enrichment_centrifuge_side",
+    "west": "goingnuclear:block/enrichment_centrifuge_side",
+    "up": "goingnuclear:block/enrichment_centrifuge_top",
+    "down": "goingnuclear:block/machine_top"
+  }
+}

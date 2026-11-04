@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "goingnuclear:core/fuel_depleted_redstone_bottom"
+  }
+}

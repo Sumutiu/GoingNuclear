@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IWI",
+    "IFI",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "W": "goingnuclear:copper_wire",
+    "F": "minecraft:furnace",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "goingnuclear:backup_generator",
+    "count": 1
+  }
+}

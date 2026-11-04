@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/reactor_casing",
+    "north": "goingnuclear:block/reactor_controller_front",
+    "south": "goingnuclear:block/reactor_casing",
+    "east": "goingnuclear:block/reactor_casing",
+    "west": "goingnuclear:block/reactor_casing",
+    "up": "goingnuclear:block/reactor_casing",
+    "down": "goingnuclear:block/reactor_casing"
+  }
+}

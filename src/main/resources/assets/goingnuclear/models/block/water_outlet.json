@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/water_outlet_in",
+    "north": "goingnuclear:block/water_outlet_front",
+    "south": "goingnuclear:block/water_outlet_in",
+    "east": "goingnuclear:block/water_outlet_in",
+    "west": "goingnuclear:block/water_outlet_in",
+    "up": "goingnuclear:block/water_outlet_in",
+    "down": "goingnuclear:block/water_outlet_in"
+  }
+}

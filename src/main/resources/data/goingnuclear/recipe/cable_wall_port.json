@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    "SCS",
+    " S "
+  ],
+  "key": {
+    "S": "minecraft:smooth_stone",
+    "C": "goingnuclear:power_cable"
+  },
+  "result": {
+    "id": "goingnuclear:cable_wall_port",
+    "count": 1
+  }
+}

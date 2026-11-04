@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SIS",
+    "I I",
+    "SIS"
+  ],
+  "key": {
+    "S": "minecraft:smooth_stone",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "goingnuclear:reactor_casing",
+    "count": 4
+  }
+}

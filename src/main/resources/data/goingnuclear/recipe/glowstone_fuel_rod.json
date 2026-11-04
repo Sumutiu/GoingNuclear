@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IGI",
+    "IBI",
+    "IGI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "G": "minecraft:glowstone_dust",
+    "B": "minecraft:glowstone"
+  },
+  "result": {
+    "id": "goingnuclear:glowstone_fuel_rod",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/machine_side",
+    "north": "goingnuclear:block/machine_power_in",
+    "south": "goingnuclear:block/machine_side",
+    "east": "goingnuclear:block/machine_side",
+    "west": "goingnuclear:block/machine_side",
+    "up": "goingnuclear:block/machine_side",
+    "down": "goingnuclear:block/water_pump_front"
+  }
+}

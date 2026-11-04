@@ -1,0 +1,297 @@
+{
+  "textures": {
+    "particle": "minecraft:block/iron_block",
+    "plate": "minecraft:block/iron_block",
+    "pin": "minecraft:block/nether_wart_block"
+  },
+  "elements": [
+    {
+      "from": [
+        3.04,
+        0,
+        3.04
+      ],
+      "to": [
+        4.96,
+        16,
+        4.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "from": [
+        3.04,
+        0,
+        7.04
+      ],
+      "to": [
+        4.96,
+        16,
+        8.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "from": [
+        3.04,
+        0,
+        11.04
+      ],
+      "to": [
+        4.96,
+        16,
+        12.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "from": [
+        7.04,
+        0,
+        3.04
+      ],
+      "to": [
+        8.96,
+        16,
+        4.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "from": [
+        7.04,
+        0,
+        7.04
+      ],
+      "to": [
+        8.96,
+        16,
+        8.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "from": [
+        7.04,
+        0,
+        11.04
+      ],
+      "to": [
+        8.96,
+        16,
+        12.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "from": [
+        11.04,
+        0,
+        3.04
+      ],
+      "to": [
+        12.96,
+        16,
+        4.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "from": [
+        11.04,
+        0,
+        7.04
+      ],
+      "to": [
+        12.96,
+        16,
+        8.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    },
+    {
+      "from": [
+        11.04,
+        0,
+        11.04
+      ],
+      "to": [
+        12.96,
+        16,
+        12.96
+      ],
+      "faces": {
+        "north": {
+          "texture": "#pin"
+        },
+        "south": {
+          "texture": "#pin"
+        },
+        "east": {
+          "texture": "#pin"
+        },
+        "west": {
+          "texture": "#pin"
+        },
+        "up": {
+          "texture": "#pin"
+        },
+        "down": {
+          "texture": "#pin"
+        }
+      }
+    }
+  ]
+}

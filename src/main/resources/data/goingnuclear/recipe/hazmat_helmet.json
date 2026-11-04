@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:leather_helmet",
+    "minecraft:yellow_dye",
+    "minecraft:slime_ball"
+  ],
+  "result": {
+    "id": "minecraft:leather_helmet",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "text": "Hazmat Helmet"
+      },
+      "minecraft:dyed_color": 15254046,
+      "minecraft:lore": [
+        {
+          "text": "☢ Radiation protection: 25%",
+          "color": "yellow",
+          "italic": false
+        },
+        {
+          "text": "Wear all four pieces for full protection",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": {
+        "goingnuclear_hazmat": true
+      }
+    }
+  }
+}

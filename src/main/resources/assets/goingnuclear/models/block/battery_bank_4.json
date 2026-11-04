@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/battery_side_4",
+    "north": "goingnuclear:block/battery_side_4",
+    "south": "goingnuclear:block/battery_back",
+    "east": "goingnuclear:block/battery_power_out",
+    "west": "goingnuclear:block/battery_power_out",
+    "up": "goingnuclear:block/battery_power_out",
+    "down": "goingnuclear:block/battery_power_out"
+  }
+}

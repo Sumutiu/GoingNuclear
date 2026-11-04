@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "RXR",
+    "CCC"
+  ],
+  "key": {
+    "C": "goingnuclear:reactor_casing",
+    "R": "minecraft:redstone",
+    "X": "minecraft:comparator"
+  },
+  "result": {
+    "id": "goingnuclear:reactor_controller",
+    "count": 1
+  }
+}

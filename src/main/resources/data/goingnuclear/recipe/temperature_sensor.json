@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "Q",
+    "C",
+    "I"
+  ],
+  "key": {
+    "Q": "minecraft:quartz",
+    "C": "minecraft:comparator",
+    "I": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "goingnuclear:temperature_sensor",
+    "count": 1
+  }
+}

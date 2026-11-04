@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "goingnuclear:block/steam_dump_valve_side",
+    "north": "goingnuclear:block/steam_dump_valve_front_1",
+    "south": "goingnuclear:block/steam_dump_valve_back",
+    "east": "goingnuclear:block/steam_dump_valve_side",
+    "west": "goingnuclear:block/steam_dump_valve_side",
+    "up": "goingnuclear:block/steam_dump_valve_top",
+    "down": "goingnuclear:block/steam_dump_valve_bottom"
+  }
+}

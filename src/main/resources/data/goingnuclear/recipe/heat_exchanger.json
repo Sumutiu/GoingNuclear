@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IPI",
+    "CBC",
+    "IPI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "P": "goingnuclear:fluid_pipe",
+    "C": "minecraft:copper_block",
+    "B": "minecraft:cauldron"
+  },
+  "result": {
+    "id": "goingnuclear:heat_exchanger",
+    "count": 1
+  }
+}

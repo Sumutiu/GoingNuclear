@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IGI",
+    "CPC",
+    "IWI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "G": "minecraft:glass",
+    "C": "minecraft:copper_ingot",
+    "P": "goingnuclear:circulation_pump",
+    "W": "goingnuclear:copper_wire"
+  },
+  "result": {
+    "id": "goingnuclear:enrichment_centrifuge",
+    "count": 1
+  }
+}
