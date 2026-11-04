@@ -50,7 +50,7 @@ Polymer, SGUI and Server Translations API are bundled inside the jar, so nothing
 
 ## 📦 Installing on a server
 
-1. Install Fabric Loader for 26.3 and put **Fabric API** and **goingnuclear-*.jar** in `mods/`.
+1. Install Fabric Loader for 26.3 and put **Fabric API** and **GoingNuclear-*.jar** in `mods/`.
 2. Start the server once. Then, to send the textures to players, edit `config/polymer/auto-host.json`
    and set `"enabled": true` (Polymer then serves the resource pack itself).
    The mod marks the pack as **required**, so players must accept it to join. To let them decline it
@@ -598,7 +598,7 @@ Requirements: **JDK 25**, internet access (Gradle downloads Minecraft, Fabric an
 ./gradlew build          (Windows: gradlew.bat build)
 ```
 
-The jar is written to `build/libs/goingnuclear-1.0.0+26.3.jar`.
+The jar is written to `build/libs/GoingNuclear-1.0.0+26.3.jar`.
 
 Versions are in `gradle.properties` (Minecraft 26.3, Loader 0.20.1, Loom 1.19-SNAPSHOT, Fabric API
 0.165.0+26.3, Polymer 0.18.5+26.3, SGUI 2.2.1+26.3, Server Translations 3.2.0+26.3).
