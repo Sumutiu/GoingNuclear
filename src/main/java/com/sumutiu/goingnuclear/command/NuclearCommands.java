@@ -9,7 +9,7 @@ import net.minecraft.network.chat.Component;
 
 /**
  * /goingnuclear help   - quick start guide
- * /goingnuclear reload - reload config/goingnuclear.json (operators)
+ * /goingnuclear reload - reload this world's config/GoingNuclear_Seed_&lt;seed&gt;/GoingNuclear.json (operators)
  */
 public final class NuclearCommands {
     private static final String[] GUIDE = {
@@ -38,7 +38,7 @@ public final class NuclearCommands {
                 .then(Commands.literal("reload")
                         .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
                         .executes(ctx -> {
-                            NuclearConfig.load();
+                            NuclearConfig.reload();
                             ctx.getSource().sendSuccess(() -> Component.literal("Going Nuclear config reloaded.").withStyle(ChatFormatting.GREEN), true);
                             return 1;
                         })));

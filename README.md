@@ -54,8 +54,9 @@ Polymer, SGUI and Server Translations API are bundled inside the jar, so nothing
 2. Start the server once. Then, to send the textures to players, edit `config/polymer/auto-host.json`
    and set `"enabled": true` (Polymer then serves the resource pack itself).
    The mod marks the pack as **required**, so players must accept it to join. To let them decline it
-   (they then see the vanilla look-alikes), set `"requireResourcePack": false` in `config/goingnuclear.json`.
-3. Optional: tune `config/goingnuclear.json` and run `/goingnuclear reload`.
+   (they then see the vanilla look-alikes), set `"requireResourcePack": false` in the world's config (see
+   **Configuration**) and restart the server.
+3. Optional: tune the world's config and run `/goingnuclear reload`.
 
 Singleplayer works too: put the same jars in your client's `mods/` folder.
 
@@ -565,7 +566,9 @@ enrich the redstone and glowstone ones.
 
 ## ⚙️ Configuration
 
-`config/goingnuclear.json` (created on first start). Highlights: reactor size limits,
+Every world has its own config, kept by its seed: `config/GoingNuclear_Seed_<seed>/GoingNuclear.json` (a
+negative seed is written as an unsigned number). It is written with the defaults the first time the world starts.
+Highlights: reactor size limits,
 fuel power and lifetime, coupling/absorption, heat capacities and transfer, pump/turbine rates,
 power use of every machine, wire length, meltdown mode, explosion cap, radiation radius and duration,
 and whether the resource pack is required (`requireResourcePack`).
@@ -598,7 +601,7 @@ Requirements: **JDK 25**, internet access (Gradle downloads Minecraft, Fabric an
 ./gradlew build          (Windows: gradlew.bat build)
 ```
 
-The jar is written to `build/libs/GoingNuclear-1.0.0+26.3.jar`.
+The jar is written to `build/libs/GoingNuclear-1.0.1+26.3.jar`.
 
 Versions are in `gradle.properties` (Minecraft 26.3, Loader 0.20.1, Loom 1.19-SNAPSHOT, Fabric API
 0.165.0+26.3, Polymer 0.18.5+26.3, SGUI 2.2.1+26.3, Server Translations 3.2.0+26.3).

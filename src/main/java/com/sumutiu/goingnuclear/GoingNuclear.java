@@ -36,18 +36,21 @@ public class GoingNuclear implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        NuclearConfig.load();
-
         ModBlocks.init();
         ModBlockEntities.init();
         ModItems.init();
 
         // Textures and models for players who accept the server resource pack.
         PolymerResourcePackUtils.addModAssets(MOD_ID);
-        if (NuclearConfig.get().requireResourcePack) {
-            // Servers using Polymer's auto-host then ask every player to accept the pack (declining disconnects).
-            PolymerResourcePackUtils.markAsRequired();
-        }
+
+        // Every world (seed) has its own config, read once the world exists and before the server first ticks.
+        ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+            NuclearConfig.load(server.getWorldGenSettings().options().seed());
+            if (NuclearConfig.get().requireResourcePack) {
+                // Servers using Polymer's auto-host then ask every player to accept the pack (declining disconnects).
+                PolymerResourcePackUtils.markAsRequired();
+            }
+        });
 
         ServerTickEvents.END_LEVEL_TICK.register(level -> {
             PipeNetworks.tickAll(level);
@@ -69,6 +72,7 @@ public class GoingNuclear implements ModInitializer {
         });
 
         ServerLifecycleEvents.SERVER_STOPPED.register(_ -> {
+            NuclearConfig.unload();
             PipeNetworks.clearAll();
             TankGroups.clearAll();
             PowerGrid.clearAll();

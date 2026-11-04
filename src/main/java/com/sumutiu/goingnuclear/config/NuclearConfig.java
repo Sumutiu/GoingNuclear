@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sumutiu.goingnuclear.GoingNuclear;
 import net.fabricmc.loader.api.FabricLoader;
+import org.jspecify.annotations.Nullable;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -11,12 +12,18 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
- * Server configuration, stored in config/goingnuclear.json.
+ * Server configuration. Every world has its own, stored by its seed in
+ * config/GoingNuclear_Seed_&lt;seed&gt;/GoingNuclear.json and read when the server starts; until then (and after
+ * it stops) the defaults apply.
  * Units: energy in J, power in J per tick (1 J/t = 20 W), fluids in mB, temperatures in degrees Celsius.
  */
 public final class NuclearConfig {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
     private static NuclearConfig instance = new NuclearConfig();
+    /**
+     * The running world's config file, or null while no world is running.
+     */
+    private static @Nullable Path file;
 
     public int minReactorSize = 3;
     public int maxReactorSize = 15;
@@ -126,12 +133,23 @@ public final class NuclearConfig {
         }
     }
 
-    public static Path path() {
-        return FabricLoader.getInstance().getConfigDir().resolve("goingnuclear.json");
+    /**
+     * Loads the config of the world with this seed, writing it with the defaults the first time.
+     */
+    public static void load(long seed) {
+        file = FabricLoader.getInstance().getConfigDir()
+                .resolve("GoingNuclear_Seed_" + Long.toUnsignedString(seed))
+                .resolve("GoingNuclear.json");
+        reload();
     }
 
-    public static void load() {
-        Path path = path();
+    /**
+     * Reads the running world's config file again (/goingnuclear reload). Settings missing from it get their
+     * defaults, and the file is written back with every setting.
+     */
+    public static void reload() {
+        Path path = file;
+        if (path == null) return;
         NuclearConfig loaded = null;
         if (Files.exists(path)) {
             try {
@@ -142,16 +160,20 @@ public final class NuclearConfig {
         }
         instance = loaded != null ? loaded : new NuclearConfig();
         instance.sanitize();
-        save();
+        try {
+            Files.createDirectories(path.getParent());
+            Files.writeString(path, GSON.toJson(instance), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            GoingNuclear.LOGGER.error("Could not write {}", path, e);
+        }
     }
 
-    public static void save() {
-        try {
-            Files.createDirectories(path().getParent());
-            Files.writeString(path(), GSON.toJson(instance), StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            GoingNuclear.LOGGER.error("Could not write {}", path(), e);
-        }
+    /**
+     * Back to the defaults once the world has stopped (singleplayer can open another world next).
+     */
+    public static void unload() {
+        file = null;
+        instance = new NuclearConfig();
     }
 
     private void sanitize() {
